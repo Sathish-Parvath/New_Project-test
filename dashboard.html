@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="sysfore logo.jpg" alt="Company Logo" class="logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+       
+        <div class="user-info">
+            <img src="USER LOGO.jpg" alt="User" class="user-icon" id="user-icon">
+            <div id="user-details" class="hidden">
+                <p>Sathish</p>
+                <button id="logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <div class="content-container">
+            <div class="form-container">
+                <form id="dataForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required>
+                    <label for="role">Role:</label>
+                    <input type="text" id="role" name="role" required>
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+            <div class="table-container">
+                <table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                            <th>Country</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+    </footer>
+
+     
+    <div id="toaster" class="hidden">
+        <p id="toaster-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
